@@ -22,7 +22,7 @@ public class TodoInMemoryRepository {
     }
 
     public Todo save(Todo todo) {
-        if(todo.getId() == null) {
+        if (todo.getId() == null) {
             todo.setId(counter.incrementAndGet());
         }
         todoMap.put(todo.getId(), todo);
